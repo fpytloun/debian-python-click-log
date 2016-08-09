@@ -1,7 +1,7 @@
 Source: python-click-log
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Uploaders: Filip Pytloun <filip@pytloun.cz>
-Section: utils
+Section: python
 Priority: optional
 Build-Depends: debhelper (>= 9),
                dh-python,
@@ -11,6 +11,8 @@ Build-Depends: debhelper (>= 9),
                python3-click,
                python-setuptools,
                python3-setuptools,
+               python-sphinx,
+               python3-sphinx,
 Standards-Version: 3.9.8
 Testsuite: autopkgtest-pkg-python
 Homepage: https://github.com/click-contrib/click-log
@@ -42,3 +44,17 @@ Description: Logging integration for Click - Python 3.x
  This is where click-log comes in.
  .
  This package contains the Python 3.x module.
+
+Package: python-click-log-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+         ${sphinxdoc:Depends}
+Description: Logging integration for Click - documentation
+ Partly because Python’s logging module aims to be so generic, it doesn’t come
+ with sensible defaults for CLI applications. At some point you might also want
+ to expose more logging levels through more options, at which point the
+ boilerplate code grows even more.
+ This is where click-log comes in.
+ .
+ This package contains the documentation for python module.

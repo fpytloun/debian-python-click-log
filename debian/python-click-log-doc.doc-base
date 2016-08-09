@@ -1,0 +1,9 @@
+Document: python-click-log-doc
+Title: Click-log Documentation
+Author: Markus Unterwaditzer
+Abstract: Sphinx documentation for Click-log
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-click-log-doc/html/index.html
+Files: /usr/share/doc/python-click-log-doc/html/*
