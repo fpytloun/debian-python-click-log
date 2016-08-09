@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+VER ?= $(shell dpkg-parsechangelog -SVersion)
+
+export PYBUILD_NAME=click-log
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild

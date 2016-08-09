@@ -1,0 +1,44 @@
+Source: python-click-log
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Filip Pytloun <filip@pytloun.cz>
+Section: utils
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all,
+               python3-all,
+               python-click,
+               python3-click,
+               python-setuptools,
+               python3-setuptools,
+Standards-Version: 3.9.8
+Testsuite: autopkgtest-pkg-python
+Homepage: https://github.com/click-contrib/click-log
+Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/python-click-log.git/
+Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/python-click-log.git
+
+Package: python-click-log
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends}
+Description: Logging integration for Click - Python 2.7
+ Partly because Python’s logging module aims to be so generic, it doesn’t come
+ with sensible defaults for CLI applications. At some point you might also want
+ to expose more logging levels through more options, at which point the
+ boilerplate code grows even more.
+ This is where click-log comes in.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-click-log
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends}
+Description: Logging integration for Click - Python 3.x
+ Partly because Python’s logging module aims to be so generic, it doesn’t come
+ with sensible defaults for CLI applications. At some point you might also want
+ to expose more logging levels through more options, at which point the
+ boilerplate code grows even more.
+ This is where click-log comes in.
+ .
+ This package contains the Python 3.x module.

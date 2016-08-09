@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/python-click-log-$1\.tar\.gz/ \
+  https://github.com/click-contrib/click-log/tags .*/v?(\d\S*)\.tar\.gz
