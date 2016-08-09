@@ -1,0 +1,23 @@
+From a45e59ededddce8188dac353d4bd61e246944c2f Mon Sep 17 00:00:00 2001
+From: Filip Pytloun <filip@pytloun.cz>
+Date: Tue, 9 Aug 2016 11:45:44 +0200
+Subject: Remove embedded image in docs to avoid privacy breach
+
+---
+ README.rst | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/README.rst b/README.rst
+index ffe30d1..fe2cdc4 100644
+--- a/README.rst
++++ b/README.rst
+@@ -1,9 +1,6 @@
+ click-log
+ =========
+ 
+-.. image:: https://travis-ci.org/click-contrib/click-log.svg?branch=master
+-    :target: https://travis-ci.org/click-contrib/click-log
+-
+ Integrates logging with click.
+ 
+ - `Documentation <https://click-log.readthedocs.org/>`_
